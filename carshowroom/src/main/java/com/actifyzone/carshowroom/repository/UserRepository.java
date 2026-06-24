@@ -7,7 +7,8 @@ import com.actifyzone.carshowroom.entity.User;
 public interface UserRepository
 extends JpaRepository<User,Integer>
 {
-    User findByUsernameAndPassword(
-            String username,
-            String password);
+    User findByUsernameAndPassword(String username, String password);
+
+    User findByToken(String token);
+    
 }

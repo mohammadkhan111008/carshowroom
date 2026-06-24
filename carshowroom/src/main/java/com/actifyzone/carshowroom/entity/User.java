@@ -1,5 +1,7 @@
 package com.actifyzone.carshowroom.entity;
 
+import java.time.LocalDateTime;
+
 import jakarta.persistence.*;
 
 @Entity
@@ -15,4 +17,9 @@ public class User
     public String password;
 
     public String role;
+
+    public String token;
+
+    public LocalDateTime tokenCreatedAt;
+    
 }

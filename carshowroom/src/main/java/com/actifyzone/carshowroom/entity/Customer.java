@@ -19,4 +19,5 @@ public class Customer {
 
     @OneToMany(cascade = CascadeType.ALL)
     public List<Car> cars;
+    
 }

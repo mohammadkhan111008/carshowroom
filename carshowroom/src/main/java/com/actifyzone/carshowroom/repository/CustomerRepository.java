@@ -4,7 +4,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.actifyzone.carshowroom.entity.Customer;
 
-public interface CustomerRepository
-        extends JpaRepository<Customer, Integer> {
-
+public interface CustomerRepository extends JpaRepository<Customer, Integer> {
+        Customer  findByName(String name);
+        
 }
